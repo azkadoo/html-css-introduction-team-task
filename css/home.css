@@ -607,6 +607,14 @@ article:first-of-type {
     gap: 4px;
 }
 
+.title-support>img {
+    width: 18%;
+}
+
+.title-support:nth-child(3) img {
+    width: 60%;
+}
+
 /* Responsif untuk layar mobile */
 @media (max-width: 768px) {
     .container-support {
@@ -654,4 +662,48 @@ footer>p {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.image-grid {
+    max-width: 400px; /* Sesuaikan dengan ukuran yang diinginkan */
+    margin: 20px
+}
+
+.img-cus {
+    margin: 8px; /* Menambahkan margin untuk memberikan jarak */
+    width: 100%; /* Sesuaikan ukuran gambar */
+    max-width: 150px; /* Batasi ukuran maksimum */
+    height: auto;
+    padding: 20px;
+    border-radius: 32px;
+    background: var(--secondary, #F2E5BF);
+}
+
+.img-cus-1 {
+    border-bottom-right-radius: 0;
+}
+
+.img-cus-2 {
+    border-bottom-left-radius: 0;
+}
+
+.img-cus-3 {
+    border-top-right-radius: 0;
+}
+
+.img-cus-4 {
+    border-top-left-radius: 0;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 576px) {
+    .image-grid {
+        max-width: 300px;
+    }
+    
+    .img-cus {
+        width: 95%;
+        max-width: 120px;
+        padding: 15px;
+    }
 }
